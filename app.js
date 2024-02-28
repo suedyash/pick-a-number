@@ -54,7 +54,7 @@ function checkGuess() {
     setGameOver();
 
   } else {
-    gameStatus.textContent = 'Nah uh!!!';
+    gameStatus.textContent = 'WRONG!!!';
     gameStatus.style.color = '#eba0ac';
     
     if (playerGuess < randomNumber) {
@@ -89,14 +89,17 @@ function retryGame() {
   inputForm_submit.style.display = 'block';
 
   // reset key game metrics
-  guessCount = 0;
-  inputForm_input.value = '';
-  gameStatus.textContent = '';
-  lowOrHi.textContent = '';
-
-  guesses.innerText = "";
-  guesses.innerText = "I'll display your previous guesses <3"; 
+  guessCount = -1;
   previousGuesses = [];
+  function resetMessages() {
+    inputForm_input.value = '';
+    gameStatus.textContent = '';
+    lowOrHi.textContent = '';
+    
+    guesses.innerText = "";
+    guesses.innerText = 'Previous guesses were: ';
+  }
+  setTimeout(resetMessages, 30);
   
   // generate new Random number for new round
   randomNumber = Math.floor(Math.random() * 100) + 1;
