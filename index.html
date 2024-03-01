@@ -1,59 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-  
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pick a number!</title>
     <link rel="stylesheet" href="./style.css">
   </head>
-  
   <body>
-
     <div id="header">
       <h1 id="header-piece-1">PICK-A-</h1>
       <h1 id="header-piece-2">NUMBER!</h1>
     </div>
-    
-
     <div id="body-container">
-
       <details>
         <summary>What's this?</summary>
         <p>We have selected a random number between 1 and 100. See if you can guess it in 10 turns or fewer.
           We'll tell you if your guess was too high or too low.
         </p>
       </details>
-
       <div id="guess-container">
-
         <p>Enter a guess...</p>
-
         <form id="guess-input-container">
           <input id="guess-input" type="number" min="0" max="100" placeholder="0 > guess < 101">
           <button id="submit-button" type="submit">✓</button>
           <button id="retry-button"">Retry</button>
         </form>
-
         <div class="guessContainer">
           <span class="guesses">I'll display your previous guesses <3</span>
         </div>
-
         <div class="guessStatus">
           <span class="lowOrHi">I'll let you know, low or high...</span>
         </div>
-
         <div class="resultContainer">
           <span class="gameStatus">I'll tell you when to celebrate ^^</span>
         </div>
-
-        
-
       </div>
-
     </div>
-
+    <footer>
+      <button id="github-button">
+        <img src="./metadata/github-logo-white-mini.png" alt="github-icon">
+        <span>swyzsh</span>
+      </button>
+    </footer>
     <script src="./app.js"></script>
-  
   </body>
 </html>

@@ -193,6 +193,37 @@ details p {
   margin-right: auto;
 }
 
+footer {
+  position: fixed;
+  left: 50%;
+  top: 100%;
+  transform: translate(-50%, -100%);
+}
+#github-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+  width: 250px;
+  height: 60px;
+  background-color: var(--mantle);
+  padding: 0px;
+  gap: 12px;
+  cursor: pointer;
+  opacity: 0.69;
+  border: none;
+}
+#github-button img {
+  width: auto;
+  height: 18px; 
+
+}
+#github-button span {
+  color: white;
+  letter-spacing: 2px;
+  font-weight: 900;
+  font-size: 20px;
+}
 
 /* Other Browsers */
 input::-webkit-outer-spin-button,

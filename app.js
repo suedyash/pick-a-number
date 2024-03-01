@@ -104,3 +104,8 @@ function retryGame() {
   // generate new Random number for new round
   randomNumber = Math.floor(Math.random() * 100) + 1;
 }
+
+// github link for footer
+document.getElementById('github-button').addEventListener('click', function() {
+  window.open('https://github.com/swyzsh', '_blank');
+});
