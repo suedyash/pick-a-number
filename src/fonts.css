@@ -1,0 +1,19 @@
+@font-face {
+  font-family: 'helveticaLight';
+  src: url('./assets/HelveticaNeue-Light.otf');
+}
+
+@font-face {
+  font-family: 'helveticaMedium';
+  src: url('./assets/HelveticaNeue-Medium.otf');
+}
+
+@font-face {
+  font-family: 'poppinsRegular';
+  src: url('./assets/Poppins-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'poppinsSemiBold';
+  src: url('./assets/Poppins-SemiBold.ttf');
+}
