@@ -13,3 +13,11 @@
     -moz-appearance: textfield;
   }
 }
+
+@layer components {
+  .display-screens {
+    @apply border-2 border-fuchsia-300 rounded-lg
+           px-3 py-2
+           text-xl text-zinc-100 text-center tracking-wider; 
+  }
+}
